@@ -30,6 +30,14 @@ public class CalTest extends TestCase {
         Cal cal = new Cal();
         double result = cal.div(1, 1);
         assertEquals(1.0, result);
+
+        try {
+            cal.div(1, 0);
+            fail("Exception was not thrown");
+        } catch (IllegalArgumentException e) {
+            assertEquals("除数不能为0", e.getMessage());
+        }
+
     }
 
     public void testGetResult() {
