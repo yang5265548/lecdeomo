@@ -3,6 +3,7 @@ import junit.framework.TestCase;
 public class CalTest extends TestCase {
 
     public void testAdd() {
+
     }
 
     public void testSub() {
